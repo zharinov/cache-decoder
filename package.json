@@ -4,7 +4,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build --dist-dir docs/"
+    "build": "parcel build --dist-dir docs/ --public-url /brotli-decoder"
   },
   "devDependencies": {
     "buffer": "6.0.3",
