@@ -1,1 +1,0 @@
-{"mappings":"AAAA,MAAM,MAAM,YAAU,AAAU;AAEhC,OAAO,CAAC,GAAG,CAAC,cAAc,CAAC","sources":["src/app.ts"],"sourcesContent":["const brotli = require 'brotli';\n\nconsole.log(\"hello worlds\")"],"names":[],"version":3,"file":"index.59697c84.js.map","sourceRoot":"/__parcel_source_root/"}
