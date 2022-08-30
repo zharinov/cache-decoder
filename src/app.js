@@ -3,7 +3,8 @@ import decompress from "brotli/decompress";
 function decompressPayload(input) {
   const decompressed = decompress(Buffer.from(input, "base64"));
   const text = new TextDecoder().decode(decompressed);
-  return text;
+  const json = JSON.parse(text);
+  return JSON.stringify(json, undefined, 2);
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -19,5 +20,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const outputText = decompressPayload(inputText);
     output.value = outputText;
-  });
+  }); 
 });
